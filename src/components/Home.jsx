@@ -267,12 +267,18 @@ const Home = () => {
         
                             <_Input type='text' placeholder=" From"  />
                             <_Input type='text' placeholder=" Airlines" />
-                            <_Input type='date' placeholder=" Boarding" />
+                            <_Input  type="text" placeholder="Boarding Date"
+        onChange={(e) => console.log(e.target.value)}
+        onFocus={(e) => (e.target.type = "date")}
+        onBlur={(e) => (e.target.type = "text")} />
       </LeftCard>
                             <RightCard>
                             <_Input type='text' placeholder=" To"  />
                             <_Input type='text' placeholder="Stopage" />
-                            <_Input type='date' placeholder=" Date" />
+                            <_Input type="text" placeholder="Return Date"
+        onChange={(e) => console.log(e.target.value)}
+        onFocus={(e) => (e.target.type = "date")}
+        onBlur={(e) => (e.target.type = "text")} />
 
                             </RightCard>                            
                             </Card>
